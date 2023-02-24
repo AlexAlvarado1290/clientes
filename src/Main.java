@@ -9,32 +9,7 @@ public class Main {
         Gson gson = new Gson();
         Clientes objeto = gson.fromJson(Cliente(), Clientes.class);
         System.out.println(objeto.clientes.toString());
-//        for (int i = 0;i<objeto.getClienteList().size();i++){
-//            System.out.println(objeto.clientes.get(i).formato());
-//            for (int j= 0;j<objeto.getClienteList().get(i).getCuentas().size();j++){
-//                System.out.println(objeto.clientes.get(i).getCuentas().get(j).formatoCuentas());
-//            }
-//        }
 
-    }
-
-    public static void Clientes(Clientes clientes){
-//        for (int i = 0;i<clientes.getClienteList().size();i++){
-//            System.out.println("Lista de Clientes");
-//            System.out.println("Nombre: " + clientes.getClienteList().get(i).);
-//            System.out.println("Número de tarjeta: " + tarjetas.getNumero_tarjeta());
-//            System.out.println("CVV: " + tarjetas.getCvv());
-//            System.out.println("Fecha de vencimiento: " + tarjetas.getFecha_vencimiento());
-//            System.out.println("Número de cuenta: " + tarjetas.getNumero_cuenta());
-//            System.out.println("Arreglo de numeros: " + tarjetas.getNumerosArreglo());
-//        }
-//
-//        System.out.println();
-//
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Ingrese el nombre del cliente");
-//        String nombre = scanner.nextLine();
-//        for (int i = 0)
     }
 
     public static String Cliente() {
