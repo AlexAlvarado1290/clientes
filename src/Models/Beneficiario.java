@@ -14,11 +14,12 @@ public class Beneficiario {
 
     @Override
     public String toString() {
-        return "\nBeneficiario{\n" +
-                "nombreBeneficiario='" + nombreBeneficiario + '\n' +
-                ", DPIBeneficiario='" + DPIBeneficiario + '\n' +
-                ", direccionBeneficiario='" + direccionBeneficiario + '\n' +
-                "}\n";
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nNombre del Beneficiario :").append(nombreBeneficiario);
+        sb.append("\nDPI :").append(DPIBeneficiario);
+        sb.append("\ndireccion: ").append(direccionBeneficiario);
+
+        return sb.toString();
     }
 
     public String getNombreBeneficiario() {

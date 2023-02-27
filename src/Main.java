@@ -5,11 +5,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Gson gson = new Gson();
         Clientes objeto = gson.fromJson(Cliente(), Clientes.class);
         System.out.println(objeto.clientes.toString());
-
     }
 
     public static String Cliente() {

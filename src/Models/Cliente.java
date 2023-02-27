@@ -15,11 +15,14 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "\nCliente{\n"+
-                "nombreCliente='" + nombreCliente + '\n' +
-                "apellidoCliente='" + apellidoCliente + '\n' +
-                "Cuentas=" + Cuentas +
-                "}\n";
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n").append("Nombre del cliente :").append(nombreCliente);
+        sb.append("\n").append("Apellido del cliente:").append(apellidoCliente).append("\n");
+        for (Cuenta cuenta: Cuentas){
+            sb.append("\u001B[32m").append("Cuentas :").append(cuenta.toString()).append("\n");
+        }
+        sb.append("\u001B[0m");
+        return sb.toString();
     }
 
     public String getNombreCliente() {

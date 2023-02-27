@@ -17,12 +17,13 @@ public class Cuenta {
 
     @Override
     public String toString() {
-        return "\nCuenta{\n" +
-                "numeroCuenta='" + numeroCuenta + '\n' +
-                "nombreCuenta='" + nombreCuenta + '\n' +
-                "beneficiarios=" + beneficiarios +
-                "tarjetas=" + tarjetas +
-                "}\n";
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nNo. Cuenta :").append(numeroCuenta);
+        sb.append("\nNombre de la cuenta :").append(nombreCuenta);
+        sb.append("\u001B[32m").append("\n").append("Beneficiarios :").append(beneficiarios);
+        sb.append("\u001B[34m").append("\n").append("Tarjetas: ").append(tarjetas);
+
+        return sb.toString();
     }
 
     public String getNumeroCuenta() {

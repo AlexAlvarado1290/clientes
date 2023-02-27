@@ -15,12 +15,13 @@ public class Tarjeta {
 
     @Override
     public String toString() {
-        return "\nTarjeta{\n" +
-                "numeroTarjeta='" + numeroTarjeta + '\n' +
-                ", nombreTarjeta='" + nombreTarjeta + '\n' +
-                ", cvv=" + cvv +
-                ", fechaVencimiento='" + fechaVencimiento + '\n' +
-                "}\n";
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nNo. Tarjeta :").append(numeroTarjeta);
+        sb.append("\nNombre de la tarjeta :").append(nombreTarjeta);
+        sb.append("\nCVV :").append(cvv);
+        sb.append("\nFecha de vencimiento: ").append(fechaVencimiento);
+
+        return sb.toString();
     }
 
     public String getNumeroTarjeta() {

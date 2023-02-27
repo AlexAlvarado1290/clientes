@@ -10,13 +10,6 @@ public class Clientes {
         this.clientes = clienteList;
     }
 
-    @Override
-    public String toString() {
-        return "\nClientes{\n" +
-                "clientes=" + clientes +
-                "}\n";
-    }
-
     public List<Cliente> getClienteList() {
         return clientes;
     }
